@@ -1,0 +1,2 @@
+virtualenv env
+env/bin/pip install --requirement requirements.pip

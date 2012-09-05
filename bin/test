@@ -1,0 +1,1 @@
+env/bin/python test_project/manage.py test blog

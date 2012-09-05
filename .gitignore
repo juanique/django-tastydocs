@@ -1,0 +1,6 @@
+env
+*.pyc
+.rope*
+build
+dist
+*egg-info*
