@@ -1,9 +1,8 @@
-from django.conf.urls.defaults import patterns, include
+from django.conf.urls.defaults import patterns
 from views import doc
-from api import api
 
 urlpatterns = patterns(
     '',
     (r'^api$', doc),
-    (r'^api', include(api.urls)),
+    (r'^example/(?P<resource_name>\w+)/', 'tastydocs.views.example_data'),
 )

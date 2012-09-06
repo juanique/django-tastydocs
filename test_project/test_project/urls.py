@@ -4,5 +4,5 @@ from blog.api import api
 urlpatterns = patterns(
     '',
     (r'^api/', include(api.urls)),
-    (r'^docs/', include("tastydocs.urls"), {"api_name": "v1"}),
+    (r'^docs/', include("tastydocs.urls"), {"api": api}),
 )

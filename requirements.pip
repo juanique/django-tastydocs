@@ -1,3 +1,4 @@
 django==1.4
+jsonfield
 -e git://github.com/toastdriven/django-tastypie.git#egg=django-tastypie
 -e git://github.com/juanique/django-chocolate.git#egg=django-chocolate

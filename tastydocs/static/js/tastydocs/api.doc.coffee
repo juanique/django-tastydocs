@@ -60,7 +60,7 @@ class ResourceFieldView extends Backbone.View
 class SampleModel extends Backbone.Model
 
   url: ()->
-      return @resource.get("list_endpoint")+"example/"
+      return window.example_url.replace("__RESOURCE_NAME__", @resource.get("name"))
 
 
 class ResourceModel extends Backbone.Model
