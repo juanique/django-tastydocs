@@ -4,7 +4,7 @@ from django.template import RequestContext
 from django.core.urlresolvers import reverse
 from chocolate.rest import TastyFactory
 from django.http import HttpResponse
-import json
+from tastypie.serializers import Serializer
 
 try:
     from south.management.commands import patch_for_test_db_setup
@@ -54,7 +54,8 @@ def example_data(request, resource_name, api):
         post_data = resource_mockup.create_post_data()
         get_data = resource_mockup.create_get_data()
 
-    json_string = json.dumps({
+    serializer = Serializer()
+    json_string = serializer.to_json({
         'POST': post_data,
         'GET': get_data
     })
