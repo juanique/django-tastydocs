@@ -1,4 +1,4 @@
 django-tastydocs
 ================
 
-Automatic Web Documentation for django-tastytools
+Automatic Web Documentation for django-tastypie
