@@ -6,6 +6,11 @@ from chocolate.rest import TastyFactory
 from django.http import HttpResponse
 import json
 
+try:
+    from south.management.commands import patch_for_test_db_setup
+except ImportError:
+    pass
+
 
 class test_db(object):
 
@@ -14,6 +19,11 @@ class test_db(object):
         self.verbosity = verbosity
 
     def __enter__(self):
+        try:
+            patch_for_test_db_setup()
+        except NameError:
+            pass
+
         connection.creation.create_test_db(self.verbosity)
 
     def __exit__(self, type, value, traceback):
