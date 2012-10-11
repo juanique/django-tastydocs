@@ -9,7 +9,7 @@ setup(
             'templates/tastydocs/*.html',
             'static/css/tastydocs/*.css',
             'static/css/tastydocs/lib/*.css',
-            'static/css/tastydocs/SyntaxHighlighter/*.css',
+            'static/css/tastydocs/lib/SyntaxHighlighter/*.css',
             'static/img/bootstrap/*.png',
             'static/js/tastydocs/*.coffee',
             'static/js/tastydocs/lib/*.js',
