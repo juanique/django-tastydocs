@@ -3,7 +3,7 @@ django-tastydocs
 
 Automatic Web Documentation for django-tastypie
 
-Requirement: `django-chocolate` : https://github.com/juanique/django-chocolate
+Requirement: `django-chocolate` - https://github.com/juanique/django-chocolate
 
 How to use
 ==========
