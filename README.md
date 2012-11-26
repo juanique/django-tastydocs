@@ -14,3 +14,5 @@ How to use
 In `urls.py`:
 
     (r'^docs/', include("tastydocs.urls"), {"api": api}) # api must be a reference to the TastyPie API object.
+
+Check out the `test_project` directory for an example of a project using this tool.
