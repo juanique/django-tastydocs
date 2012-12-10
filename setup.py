@@ -6,7 +6,14 @@ setup(
     packages = find_packages(),
     package_data={
         'tastydocs' : [
-            '*.*',
+            'templates/tastydocs/*.html',
+            'static/css/tastydocs/*.css',
+            'static/css/tastydocs/lib/*.css',
+            'static/css/tastydocs/lib/SyntaxHighlighter/*.css',
+            'static/img/bootstrap/*.png',
+            'static/js/tastydocs/*.coffee',
+            'static/js/tastydocs/lib/*.js',
+            'static/js/tastydocs/lib/SyntaxHighlighter/*.js'
         ]
     },
     long_description="Automagic web documentation for tastypie REST APIs."
