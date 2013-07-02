@@ -1,0 +1,2 @@
+recursive-include tastydocs/templates *.html
+recursive-include tastydocs/static *
